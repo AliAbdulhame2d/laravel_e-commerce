@@ -80,12 +80,14 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
+                @php
+                    $var=100;
 
-                @if(1===1)
+                @endphp
+                @if($var==100)
                     <div class="">Ali Abdulhameed</div>
                 @endif
-
-                
+        
                 
                 </div>
 
