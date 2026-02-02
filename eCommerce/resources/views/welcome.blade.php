@@ -80,12 +80,17 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
+
+                {{-- declaration --}}   
                 @php
                     $var=100;
 
                 @endphp
                 @if($var==100)
-                    <div class="">Ali Abdulhameed</div>
+                @for ($i = 0; $i < 3; $i++)
+                     <div class="">Ali Abdulhameed {{$i}}</div>
+                @endfor
+                   
                 @endif
         
                 
