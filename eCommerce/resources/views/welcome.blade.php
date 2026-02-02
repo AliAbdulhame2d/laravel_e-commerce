@@ -81,7 +81,12 @@
                 <div class="title m-b-md">
                     Laravel
 
-                    <?php echo '<div class="">Ali Abdulhameed</div>'; ?>
+                @if(1===1)
+                    <div class="">Ali Abdulhameed</div>
+                @endif
+
+                
+                
                 </div>
 
                 <div class="links">
