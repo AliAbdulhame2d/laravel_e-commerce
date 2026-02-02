@@ -92,8 +92,15 @@
                 @endfor
                    
                 @endif
-        
                 
+               <form action="">
+                @csrf
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="submit">
+               </form>
+
                 </div>
 
                 <div class="links">
