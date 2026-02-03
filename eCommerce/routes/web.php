@@ -18,3 +18,15 @@ Route::get('/', function () {
 Route::get('/about-me', function () {
     return view('about');
 });
+
+
+Route::get('/contact-me', function () {
+    return view('contact', ['page_name'=>'Contact Me',
+    'page_description'=>'This is Discription'
+]);
+});
+
+/*Route::view('contact-me','contact',[
+    'page_name'=>'Contact Me',
+    'page_description'=>'This is Discription'
+]);*/
