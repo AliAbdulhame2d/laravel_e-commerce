@@ -32,7 +32,9 @@ Route::get('/category/{id}', function ($id) {
         '2'=>'Programming',
         '3'=>'Books',
     ];
-    return view('category',['the_cat'=> $cat[$id]]);
+    return view('category',[
+        'the_cat'=> isset($cat[$id]) ? $cat[$id] :"This Id is not found" 
+    ]);
 });
 
 
