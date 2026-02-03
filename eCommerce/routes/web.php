@@ -26,6 +26,16 @@ Route::get('/contact-me', function () {
 ]);
 });
 
+Route::get('/category/{id}', function ($id) {
+    $cat=[
+        '1'=>'Games',
+        '2'=>'Programming',
+        '3'=>'Books',
+    ];
+    return view('category',['the_cat'=> $cat[$id]]);
+});
+
+
 /*Route::view('contact-me','contact',[
     'page_name'=>'Contact Me',
     'page_description'=>'This is Discription'
