@@ -9,5 +9,5 @@
 @endsection
 
 @section('sidebar')
-This Is Sidebar From Contact
+<p>This Is Sidebar From Contact</p>
 @endsection

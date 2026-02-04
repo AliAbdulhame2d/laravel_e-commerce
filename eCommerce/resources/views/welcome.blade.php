@@ -1,4 +1,14 @@
-<!doctype html>
+
+@extends('layout.master')
+ 
+@section('title','Home')
+
+@section('content')
+   <p> Welcome in Laravel 5</p>
+@endsection
+
+
+ {{--<!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
@@ -81,7 +91,7 @@
                 <div class="title m-b-md">
                     Laravel
 
-                {{-- declaration --}}   
+                // declaration    
                 @php
                     $var=100;
 
@@ -114,3 +124,4 @@
         </div>
     </body>
 </html>
+--}}

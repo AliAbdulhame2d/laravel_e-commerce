@@ -7,11 +7,10 @@
     <title>@yield('title','Unknown Page')</title>
 </head>
 <body>
-    @yield('content')
 
-    @section('sidebar')
-      This Is Sidebar From Master Layout
-    @show
+    @include('layout.navbar')
+    @yield('content')
+    @include('layout.sidebar')
 
 </body>
 </html>

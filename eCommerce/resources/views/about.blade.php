@@ -4,6 +4,6 @@
 @section('title','About Me')
     
 @section('content')
-    Welcome From About View
+    <p>Welcome From About View</p>
 @endsection
 
