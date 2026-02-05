@@ -12,19 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('pages.welcome');
+})->name('home');
 
 Route::get('/about-me', function () {
-    return view('about');
-});
+    return view('pages.about');
+})->name('about');
 
 
 Route::get('/contact-me', function () {
-    return view('contact', ['page_name'=>'Contact Me',
+    return view('pages.contact', ['page_name'=>'Contact Me',
     'page_description'=>'This is Discription'
 ]);
-});
+})->name('contact');
 
 Route::get('/category/{id}', function ($id) {
     $cat=[
@@ -32,10 +32,10 @@ Route::get('/category/{id}', function ($id) {
         '2'=>'Programming',
         '3'=>'Books',
     ];
-    return view('category',[
+    return view('pages.category',[
         'the_cat'=> isset($cat[$id]) ? $cat[$id] :"This Id is not found" 
     ]);
-});
+})->name('category');
 
 
 /*Route::view('contact-me','contact',[
